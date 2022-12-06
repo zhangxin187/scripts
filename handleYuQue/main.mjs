@@ -12,10 +12,7 @@ class Logger {
 
 const logger = new Logger();
 
-// const cookie = await question(chalk.green("please enter cookie> "));
-
-const cookie =
-  "lang=zh-cn; yuque_ctoken=q8zsxQzZ8TeyF9KclihjvEDv; _yuque_session=kC4Wtyjde9lU30Bjjd_G1R1NWkCYN3bhEzotXj5F8vkQ-hQh0ctt0oF1_yaCKT1MjVuArMBulKHTUoLKPNluaQ==; current_theme=default; acw_tc=0bca322a16703448813033862e894d8c966c010c485e2149c0d00945c63d8b";
+const cookie = await question(chalk.green("please enter cookie> "));
 
 const getNoteMap = async () => {
   const response = await fetch(
